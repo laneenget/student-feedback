@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Student Feedback</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="feedback-styles.css" type="text/css">
+</head>
+
+<body class="m-3">
+
+    <div class="jumbotron">
+        <h1>Please provide feedback. You may do so anonymously.</h1>
+    </div>
+
+    <div class="row">
+        <div class="col-md-5">
+            <div>
+                <p class="description">As one of our students, your thoughts, comments, and feedback are very important to us.</p>
+                <p class="description">Please use this form to send us your feedback.</p>
+                <p class="description">If you would like a response, please include your contact information.</p>
+            </div>
+        </div>
+    <div class="col-md-7">
+        <form class="ml-5">
+            <br><label for="name"> Name </label><input id="name" name="name" class="form-control" type="text">
+            <br><label for="email"> Email </label><input id="email" name="email" class="form-control" type="email">
+            <p>
+                <br><label for="comments">Comments</label>
+                <br><textarea id="comments" class="form-control" required></textarea>
+            </p>
+            <p class="form-text">
+                Are you a current student?
+                <div class="form-check">
+                    <input id="yes" name="current" class="form-check-input" type="radio" checked>
+                    <label for="yes" class="form-check-label">Yes</label>
+                </div>
+                <div class="form-check">
+                    <input id="no" name="current" class="form-check-input" type="radio">
+                    <label for="no" class="form-check-label">No</label>
+                </div>
+            </p>
+            <br><input class="btn btn-primary mt-2" id="submit" name="submit" type="submit">
+        </form>
+    </div>
+</div>
+</body>
